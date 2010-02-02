@@ -17,9 +17,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package sole purpose is to provide upgrade to new names of
 obsoleted packages.
 
-%define	PkgN(n:) %(NVR=%{-n*}; IFS=-;set -- $NVR; echo $1)
-%define	PkgV(n:) %(NVR=%{-n*}; IFS=-;set -- $NVR; echo $2)
-%define	PkgR(n:) %(NVR=%{-n*}; IFS=-;set -- $NVR; echo $3)
+%define	PkgN(n:) %(set -x;NVR=%{-n*}; IFS=-;set -- $NVR; V=$(eval echo \"\\$$(($#-1))\"); R=$(eval echo \"\\$$(($#-0))\"); unset IFS; echo ${NVR%%-$V-$R})
+%define	PkgV(n:) %(set -x;NVR=%{-n*}; IFS=-;set -- $NVR; eval echo \"\\$$(($#-1))\")
+%define	PkgR(n:) %(set -x;NVR=%{-n*}; IFS=-;set -- $NVR; eval echo \"\\$$#\")
 
 %define		migrate() \
 %package -n %{PkgN -n %1} \
