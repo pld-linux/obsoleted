@@ -1,5 +1,4 @@
 # TODO
-# - handle subpackages
 # - handle epoch
 # - hu ;)
 Summary:	Obsolete packages in PLD Linux distro
@@ -40,9 +39,13 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 %{nil}
 
 # NOTES about writing rules:
+#
 # The upgraded package MUST obsolete the version we provide, thus
 # rule with "ntp-4.2.4p8-4 => ntpd-4.2.4p8-5"
-# ntpd-4.2.4p8-5 MUST "Obsolete: ntp < 4.2.4p8-4"
+# ntpd-4.2.4p8-5 MUST "Obsolete: ntp < 4.2.4p8-5"
+# and "ntp-4.2.4p8-4" must be bigger than last name of old package name, ie
+# ntp-4.2.4p8-3 was last package with old name.
+#
 # everything else is just magic, watch and have fun :)
 
 %migrate ntp-4.2.4p8-4 => ntpd-4.2.4p8-5
