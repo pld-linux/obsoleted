@@ -1,7 +1,7 @@
 # TODO
 # - handle subpackages
 # - handle epoch
-# - pl, hu ;)
+# - hu ;)
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
@@ -10,6 +10,8 @@ License:	GPL
 Group:		Base
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# Adapter: This file does not like to be adapterized!
 
 %description
 This package sole purpose is to provide upgrade to new names of
@@ -21,7 +23,8 @@ obsoleted packages.
 
 %define		migrate() \
 %package -n %{PkgN -n %1} \
-Summary:	%{PkgN -n %1} -> %{PkgN -n %3} upgrade path \
+Summary:	%{PkgN -n %1} -> %{PkgN -n %3} upgrade path. \
+Summary(pl.UTF-8):	Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 Group:		Base \
 Version:	%{PkgV -n %1} \
 Release:	%{PkgR -n %1} \
@@ -29,6 +32,9 @@ Requires:	%{PkgN -n %3} >= %{PkgV -n %3}-%{PkgR -n %3} \
 \
 %description -n %{PkgN -n %1} \
 %{PkgN -n %1} -> %{PkgN -n%3} upgrade path.\
+\
+%description -n %{PkgN -n %1} -l pl.UTF-8 \
+Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 \
 %files -n %{PkgN -n %1}\
 %{nil}
