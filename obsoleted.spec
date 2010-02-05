@@ -7,6 +7,7 @@ Version:	0
 Release:	1
 License:	GPL
 Group:		Base
+BuildRequires:	rpm >= 4.4.9-56
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -48,8 +49,10 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 #
 # everything else is just magic, watch and have fun :)
 
+%if "%{pld_release}" != "ac"
 %migrate ntp-4.2.4p8-4 => ntpd-4.2.4p8-5
 %migrate ntp-client-4.2.4p8-4 => ntpdate-4.2.4p8-5
+%endif
 
 %prep
 %setup -qcT
