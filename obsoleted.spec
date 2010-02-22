@@ -4,14 +4,21 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
-BuildArch:	noarch
+# poldek is stupid, it does not consider noarch migration as healthy as same arch pkg
+# if you wish to debug and fix, then here's trace log:
+# POLDEK_TRACE=1 poldek -u ntp-client -tv -vvvvvvvv
+# http://glen.alkohol.ee/pld/poldek-ntptrace.log.bz2
+#BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 # Adapter: This file does not like to be adapterized!
+
+# rpmbuild: we have no binary payloads
+%define		_enable_debug_packages	0
 
 %description
 This package sole purpose is to provide upgrade to new names of
@@ -49,6 +56,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 #
 # everything else is just magic, watch and have fun :)
 
+# Usage: migrate OLD_NAME-VERSION-RELEASE => NEW_NAME-VERSION-RELEASE
 %migrate ntp-4.2.4p8-5 => ntpd-4.2.4p8-6
 %migrate ntp-client-4.2.4p8-5 => ntpdate-4.2.4p8-6
 
