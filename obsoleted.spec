@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	3
+Release:	4
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -49,16 +49,16 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n%3}.\
 # NOTES about writing rules:
 #
 # The upgraded package MUST obsolete the version we provide, thus
-# rule with "ntp-4.2.4p8-5 => ntpd-4.2.4p8-6"
-# ntpd-4.2.4p8-6 MUST "Obsolete: ntp < 4.2.4p8-6"
-# and "ntp-4.2.4p8-5" must be bigger than last name of old package name, ie
+# rule with "ntp-4.2.4p8-6 => ntpd-4.2.4p8-8"
+# ntpd-4.2.4p8-8 MUST "Obsolete: ntp < 4.2.4p8-6"
+# and "ntp-4.2.4p8-6" must be bigger than last name of old package name, ie
 # ntp-4.2.4p8-3 was last package with old name.
 #
 # everything else is just magic, watch and have fun :)
 
 # Usage: migrate OLD_NAME-VERSION-RELEASE => NEW_NAME-VERSION-RELEASE
-%migrate ntp-4.2.4p8-5 => ntpd-4.2.4p8-6
-%migrate ntp-client-4.2.4p8-5 => ntpdate-4.2.4p8-6
+%migrate ntp-4.2.4p8-6 => ntpd-4.2.4p8-8
+%migrate ntp-client-4.2.4p8-6 => ntpdate-4.2.4p8-8
 
 %prep
 %setup -qcT
