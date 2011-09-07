@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -59,6 +59,8 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 # Usage: migrate OLD_NAME-VERSION-RELEASE => NEW_NAME-VERSION-RELEASE
 %migrate ntp-4.2.4p8-6 => ntpd-4.2.4p8-8
 %migrate ntp-client-4.2.4p8-6 => ntpdate-4.2.4p8-8
+%migrate util-linux-ng-2.19-1 => util-linux-2.19.1-1
+%migrate vixie-cron-4.1-24 => cronie-1.4.1-1
 
 %prep
 %setup -qcT
