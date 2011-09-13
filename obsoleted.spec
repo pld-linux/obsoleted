@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	5
+Release:	6
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -61,6 +61,26 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate ntp-client-4.2.4p8-6 => ntpdate-4.2.4p8-8
 %migrate util-linux-ng-2.19-1 => util-linux-2.19.1-1
 %migrate vixie-cron-4.1-24 => cronie-1.4.1-1
+%migrate kde4-kdeedu-blinken-4.6.99-1 => blinken-4.7.0-1
+%migrate kde4-kdeedu-cantor-4.6.99-1 => cantor-4.7.0-1
+%migrate kde4-kdeedu-gwenview-4.6.99-1 => gwenview-4.7.0-1
+%migrate kde4-kdeedu-kalgebra-4.6.99-1 => kalgebra-4.7.0-1
+%migrate kde4-kdeedu-kalzium-4.6.99-1 => kalzium-4.7.0-1
+%migrate kde4-kdeedu-kanagram-4.6.99-1 => kanagram-4.7.0-1
+%migrate kde4-kdeedu-kbruch-4.6.99-1 => kbruch-4.7.0-1
+%migrate kde4-kdeedu-kgeography-4.6.99-1 => kgeography-4.7.0-1
+%migrate kde4-kdeedu-khangman-4.6.99-1 => khangman-4.7.0-1
+%migrate kde4-kdeedu-kig-4.6.99-1 => kig-4.7.0-1
+%migrate kde4-kdeedu-kiten-4.6.99-1 => kiten-4.7.0-1
+%migrate kde4-kdeedu-klettres-4.6.99-1 => klettres-4.7.0-1
+%migrate kde4-kdegraphics-kcolorchooser-4.6.99-1 => kcolorchooser-4.7.0-1
+%migrate kde4-kdegraphics-kamera-4.6.99-1 => kamera-4.7.0-1
+%migrate kde4-kdegraphics-kgamma-4.6.99-1 => kgamma-4.7.0-1
+%migrate kde4-kdebase-kwrite-4.6.99-1 => kate-4.7.0-1
+%migrate kde4-kdesdk-kate-4.6.99-1 => kate-4.7.0-1
+%migrate kde4-kdebindings-smoke-qt-4.6.99-1 => smokeqt-4.7.0-1
+%migrate kde4-kdebindings-smoke-kde-4.6.99-1 => smokekde-4.7.0-1
+%migrate kde4-kdebindings-smoke-devel-4.6.99-1 => smokegen-devel-4.7.0-1
 
 %prep
 %setup -qcT
