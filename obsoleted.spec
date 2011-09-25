@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	11
+Release:	12
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -87,7 +87,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kde4-kdegraphics-kgamma-4.6.100-1 => kgamma-4.7.0-1
 %migrate kde4-kdegraphics-kolourpaint-4.6.100-1 => kolourpaint-4.7.0-1
 %migrate kde4-kdegraphics-kruler-4.6.100-1 => kolourpaint-4.7.0-1
-%migrate kde4-kdegraphics-ksane-4.6.100-1 => ksane-4.7.0-1
+%migrate kde4-kdegraphics-ksane-4.6.100-1 => ksaneplugin-4.7.0-1
 %migrate kde4-kdegraphics-ksnapshot-4.6.100-1 => ksnapshot-4.7.0-1
 %migrate kde4-kdegraphics-svgpart-4.6.100-1 => svgpart-4.7.0-1
 %migrate kde4-kdegraphics-okular-4.6.100-1 => okular-4.7.0-1
