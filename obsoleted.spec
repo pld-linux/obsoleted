@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	9
+Release:	10
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -101,15 +101,13 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kde4-libkdcraw-4.6.100-1 => libkdcraw-4.7.0-1
 %migrate kde4-libkdeedu-4.6.100-1 => libkdeedu-4.7.0-1
 %migrate kde4-kdeedu-devel-4.6.100-1 => libkdeedu-devel-4.7.0-1
-%migrate kde4-kdeedu-devel-4.6.100-1 => marble-devel-4.7.0-1
 %migrate kde4-libkexiv2-4.6.100-1 => libkexiv2-4.7.0-1
 %migrate kde4-libkipi-4.6.100-1 => libkipi-4.7.0-1
-%migrate kde4-kdegraphics-ksane-4.6.100-1 => libksane-4.7.0-1
 %migrate kde4-kdegraphics-devel-4.6.100-1 => libkdcraw-devel-4.7.0-1
-%migrate kde4-kdegraphics-devel-4.6.100-1 => libkexiv2-devel-4.7.0-1
-%migrate kde4-kdegraphics-devel-4.6.100-1 => libkipi-devel-4.7.0-1
-%migrate kde4-kdegraphics-devel-4.6.100-1 => libksane-devel-4.7.0-1
-%migrate kde4-kdegraphics-devel-4.6.100-1 => okular-devel-4.7.0-1
+#%%migrate kde4-kdegraphics-devel-4.6.100-1 => libkexiv2-devel-4.7.0-1
+#%%migrate kde4-kdegraphics-devel-4.6.100-1 => libkipi-devel-4.7.0-1
+#%%migrate kde4-kdegraphics-devel-4.6.100-1 => libksane-devel-4.7.0-1
+#%%migrate kde4-kdegraphics-devel-4.6.100-1 => okular-devel-4.7.0-1
 
 %prep
 %setup -qcT
