@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	7
+Release:	8
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -79,6 +79,9 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kde4-kdeedu-kturtle-4.6.100-1 => kturtle-4.7.0-1
 %migrate kde4-kdeedu-kwordquiz-4.6.100-1 => kwordquiz-4.7.0-1
 %migrate kde4-kdeedu-marble-4.6.100-1 => marble-4.7.0-1
+%migrate kde4-kdeedu-parley-4.6.100-1 => parley-4.7.0-1
+%migrate kde4-kdeedu-rocs-4.6.100-1 => rocs-4.7.0-1
+%migrate kde4-kdeedu-step-4.6.100-1 => step-4.7.0-1
 %migrate kde4-kdegraphics-kcolorchooser-4.7.0-1 => kcolorchooser-4.7.0-1
 %migrate kde4-kdegraphics-kamera-4.7.0-1 => kamera-4.7.0-1
 %migrate kde4-kdegraphics-kgamma-4.7.0-1 => kgamma-4.7.0-1
