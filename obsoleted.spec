@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	13
+Release:	14
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -59,13 +59,16 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 # Usage: migrate OLD_NAME-VERSION-RELEASE => NEW_NAME-VERSION-RELEASE
 %migrate ntp-4.2.4p8-6 => ntpd-4.2.4p8-8
 %migrate ntp-client-4.2.4p8-6 => ntpdate-4.2.4p8-8
-%migrate util-linux-ng-2.19-1 => util-linux-2.19.1-1
-%migrate util-linux-ng-chkdupexe-2.19-1 => util-linux-chkdupexe-2.19.1-1
-%migrate util-linux-ng-libs-2.19-1 => libblkid-2.19.1-1
-%migrate util-linux-ng-devel-2.19-1 => libblkid-devel-2.19.1-1
-%migrate util-linux-ng-static-2.19-1 => libblkid-static-2.19.1-1
-%migrate util-linux-ng-initrd-2.19-1 => util-linux-initrd-2.19.1-1
+
+%migrate util-linux-ng-2.20-1 => util-linux-2.19.1-2
+%migrate util-linux-ng-chkdupexe-2.20-1 => util-linux-chkdupexe-2.19.1-2
+%migrate util-linux-ng-libs-2.20-1 => libblkid-2.19.1-2
+%migrate util-linux-ng-devel-2.20-1 => libblkid-devel-2.19.1-2
+%migrate util-linux-ng-static-2.20-1 => libblkid-static-2.19.1-2
+%migrate util-linux-ng-initrd-2.20-1 => util-linux-initrd-2.19.1-2
+
 %migrate vixie-cron-4.1-24 => cronie-1.4.1-1
+
 %migrate kde4-kdeedu-blinken-4.6.100-1 => blinken-4.7.0-1
 %migrate kde4-kdeedu-cantor-4.6.100-1 => cantor-4.7.0-1
 %migrate kde4-kdeedu-gwenview-4.6.100-1 => gwenview-4.7.0-1
