@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	15
+Release:	16
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -67,7 +67,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate util-linux-ng-static-2.20-1 => libblkid-static-2.19.1-2
 %migrate util-linux-ng-initrd-2.20-1 => util-linux-initrd-2.19.1-2
 
-%migrate vixie-cron-4.3-1 => cronie-1.4.1-1
+%migrate vixie-cron-4.4-1 => cronie-1.4.1-1
 
 %migrate kde4-kdeedu-blinken-4.6.100-1 => blinken-4.7.0-1
 %migrate kde4-kdeedu-cantor-4.6.100-1 => cantor-4.7.0-1
