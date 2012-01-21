@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	16
+Release:	16.1
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -117,6 +117,37 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 #%%migrate kde4-kdegraphics-devel-4.6.100-1 => libkipi-devel-4.7.0-1
 #%%migrate kde4-kdegraphics-devel-4.6.100-1 => libksane-devel-4.7.0-1
 #%%migrate kde4-kdegraphics-devel-4.6.100-1 => okular-devel-4.7.0-1
+
+%migrate gwenview-4.8.100-1 => kde4-gwenview-4.8.0-3
+%migrate okular-4.8.100-1 => kde4-okular-4.8.0-2
+%migrate marble-4.8.100-1 => kde4-marble-4.8.0-2
+%migrate konsole-4.8.100-1 => kde4-konsole-4.8.0-2
+%migrate svgpart-4.8.100-1 => kde4-svgpart-4.8.0-2
+%migrate ksnapshot-4.8.100-1 => kde4-ksnapshot-4.8.0-2
+%migrate kamera-4.8.100-1 => kde4-kamera-4.8.0-2
+%migrate kate-4.8.100-1 => kde4-kate-4.8.0-2
+%migrate kcolorchooser-4.8.100-1 => kde4-kcolorchooser-4.8.0-2
+%migrate kgamma-4.8.100-1 => kde4-kgamma-4.8.0-2
+%migrate ksaneplugin-4.8.100-1 => kde4-ksaneplugin-4.8.0-2
+%migrate libkdcraw-4.8.100-1 => kde4-libkdcraw-4.8.0-2
+%migrate libkdeedu-4.8.100-1 => kde4-libkdeedu-4.8.0-2
+%migrate libkexiv2-4.8.100-1 => kde4-libkexiv2-4.8.0-2
+%migrate libkipi-4.8.100-1 => kde4-libkipi-4.8.0-2
+%migrate libksane-4.8.100-1 => kde4-libksane-4.8.0-2
+%migrate blinken-4.8.100-1 => kde4-blinken-4.8.0-2
+%migrate cantor-4.8.100-1 => kde4-cantor-4.8.0-3
+%migrate kalgebra-4.8.100-1 => kde4-kalgebra-4.8.0-2
+%migrate kalzium-4.8.100-1 => kde4-kalzium-4.8.0-2
+%migrate kanagram-4.8.100-1 => kde4-kanagram-4.8.0-2
+%migrate mobipocket-4.8.100-1 => kde4-kdegraphics-mobipocket-4.8.0-1
+%migrate kdegraphics-strigi-analyzer-4.8.100-1 => kde4-kdegraphics-strigi-analyzer-4.8.0-1
+%migrate kdegraphics-thumbnailers-4.8.100-1 => kde4-kdegraphics-thumbnailers-4.8.0-1
+%migrate kgeography-4.8.100-1 => kde4-kgeography-4.8.0-1
+%migrate kiten-4.8.100-1 => kde4-kiten-4.8.0-1
+%migrate smokegen-4.8.100-1 => kde4-smokegen-4.8.0-1
+%migrate smokeqt-4.8.100-1 => kde4-smokeqt-4.8.0-1
+%migrate smokekde-4.8.100-1 => kde4-smokekde-4.8.0-1
+%migrate qyoto-4.8.100-1 => kde4-qyoto-4.8.0-1
 
 %prep
 %setup -qcT
