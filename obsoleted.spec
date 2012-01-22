@@ -148,6 +148,24 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate smokeqt-4.8.100-1 => kde4-smokeqt-4.8.0-1
 %migrate smokekde-4.8.100-1 => kde4-smokekde-4.8.0-1
 %migrate qyoto-4.8.100-1 => kde4-qyoto-4.8.0-1
+%migrate kolourpaint-4.8.100-1 => kde4-kolourpaint-4.8.0-1
+%migrate kde4-kdeutils-kwalletmanager-4.8.100-1 => kde4-kwallet-4.8.0-2
+%migrate kde4-kdeutils-kgpg-4.8.100-1 => kde4-kgpg-4.8.0-1
+%migrate kde4-kdeutils-ark-4.8.100-1 => kde-ark-4.8.0-1
+%migrate rocs-4.8.100-1 >= kde4-rocs-4.8.0-1
+%migrate step-4.8.100-1 >= kde4-step-4.8.0-1
+%migrate parley-4.8.100-1 >= kde4-parley-4.8.0-1
+%migrate khangman-4.8.100-1 >= kde4-khangman-4.8.0-1
+%migrate kig-4.8.100-1 >= kde4-kig-4.8.0-1
+%migrate kimono-4.8.100-1 >= kde4-kimono-4.8.0-1
+%migrate klettres-4.8.100-1 >= kde4-klettres-4.8.0-1
+%migrate kmplot-4.8.100-1 >= kde4-kmplot-4.8.0-1
+%migrate kruler-4.8.100-1 >= kde4-kruler-4.8.0-1
+%migrate kstars-4.8.100-1 >= kde4-kstars-4.8.0-1
+%migrate kturtle-4.8.100-1 >= kde4-kturtle-4.8.0-1
+%migrate kwordquiz-4.8.100-1 >= kde4-kwordquiz-4.8.0-1
+%migrate kde4-kdeutils-filelight-4.8.100-1 >= kde4-filelight-4.8.0-1
+%migrate kde4-kdeaccessibility-jovie-4.8.100-1 => kde4-jovie-4.8.0-2
 
 %prep
 %setup -qcT
