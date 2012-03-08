@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	17
+Release:	18
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -117,7 +117,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kwordquiz-4.8.100-1 >= kde4-kwordquiz-4.8.0-1
 %migrate kde4-kdeutils-filelight-4.8.100-1 >= kde4-filelight-4.8.0-1
 %migrate kde4-kdeaccessibility-jovie-4.8.100-1 => kde4-jovie-4.8.0-2
-%migrate man-1.6g-2 => man-db-2.6.1-1
+%migrate man-1.6g-3 => man-db-2.6.1-1
 
 %prep
 %setup -qcT
