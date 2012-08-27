@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	22
+Release:	23
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -102,7 +102,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kolourpaint-4.8.100-1 => kde4-kolourpaint-4.8.0-1
 %migrate kde4-kdeutils-kwalletmanager-4.8.100-1 => kde4-kwallet-4.8.0-2
 %migrate kde4-kdeutils-kgpg-4.8.100-1 => kde4-kgpg-4.8.0-1
-%migrate kde4-kdeutils-ark-4.8.100-1 => kde-ark-4.8.0-1
+%migrate kde4-kdeutils-ark-4.8.100-1 => kde4-ark-4.8.0-1
 %migrate rocs-4.8.100-1 >= kde4-rocs-4.8.0-1
 %migrate step-4.8.100-1 >= kde4-step-4.8.0-1
 %migrate parley-4.8.100-1 >= kde4-parley-4.8.0-1
