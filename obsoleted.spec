@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	21
+Release:	22
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -118,7 +118,7 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kde4-kdeutils-filelight-4.8.100-1 >= kde4-filelight-4.8.0-1
 %migrate kde4-kdeaccessibility-jovie-4.8.100-1 => kde4-jovie-4.8.0-2
 %migrate kde4-kdemultimedia-audiocd-4.8.100-1 >= kde4-audiocd-kio-4.9.0-1
-%migrate kde4-kdemultimedia-cddb-4.8.100-1 >= kde4-cddb-4.9.0-1
+%migrate kde4-kdemultimedia-cddb-4.8.100-1 >= kde4-libkcddb-4.9.0-1
 %migrate kde4-kdemultimedia-dragon-4.8.100-1 >= kde4-dragon-4.9.0-1
 %migrate kde4-kdemultimedia-ffmpegthumbs-4.8.100-1 >= kde4-ffmpegthumbs-4.9.0-1
 %migrate kde4-kdemultimedia-juk-4.8.100-1 >= kde4-juk-4.9.0-1
