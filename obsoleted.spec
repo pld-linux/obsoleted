@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	20
+Release:	21
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -117,16 +117,16 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kwordquiz-4.8.100-1 >= kde4-kwordquiz-4.8.0-1
 %migrate kde4-kdeutils-filelight-4.8.100-1 >= kde4-filelight-4.8.0-1
 %migrate kde4-kdeaccessibility-jovie-4.8.100-1 => kde4-jovie-4.8.0-2
-%migrate kde4-kdemultimedia-audiocd-4.8.4-1 >= kde4-audiocd-kio-4.9.0-1
-%migrate kde4-kdemultimedia-cddb-4.8.4-1 >= kde4-cddb-4.9.0-1
-%migrate kde4-kdemultimedia-dragon-4.8.4-1 >= kde4-dragon-4.9.0-1
-%migrate kde4-kdemultimedia-ffmpegthumbs-4.8.4-1 >= kde4-ffmpegthumbs-4.9.0-1
-%migrate kde4-kdemultimedia-juk-4.8.4-1 >= kde4-juk-4.9.0-1
-%migrate kde4-kdemultimedia-kmix-4.8.4-1 >= kde4-kmix-4.9.0-1
-%migrate kde4-kdemultimedia-kscd-4.8.4-1 >= kde4-kscd-4.9.0-1
-%migrate kde4-kdemultimedia-libkcddb-4.8.4-1 >= kde4-libkcddb-4.9.0-1
-%migrate kde4-kdemultimedia-mplayerthumbs-4.8.4-1 >= kde4-mplayerthumbs-4.9.0-1
-%migrate man-1.6g-3 => man-db-2.6.1-1
+%migrate kde4-kdemultimedia-audiocd-4.8.100-1 >= kde4-audiocd-kio-4.9.0-1
+%migrate kde4-kdemultimedia-cddb-4.8.100-1 >= kde4-cddb-4.9.0-1
+%migrate kde4-kdemultimedia-dragon-4.8.100-1 >= kde4-dragon-4.9.0-1
+%migrate kde4-kdemultimedia-ffmpegthumbs-4.8.100-1 >= kde4-ffmpegthumbs-4.9.0-1
+%migrate kde4-kdemultimedia-juk-4.8.100-1 >= kde4-juk-4.9.0-1
+%migrate kde4-kdemultimedia-kmix-4.8.100-1 >= kde4-kmix-4.9.0-1
+%migrate kde4-kdemultimedia-kscd-4.8.100-1 >= kde4-kscd-4.9.0-1
+%migrate kde4-kdemultimedia-libkcddb-4.8.100-1 >= kde4-libkcddb-4.9.0-1
+%migrate kde4-kdemultimedia-mplayerthumbs-4.8.100-1 >= kde4-mplayerthumbs-4.9.0-1
+%migrate man-1.7-1 => man-db-2.6.1-1
 
 %prep
 %setup -qcT
