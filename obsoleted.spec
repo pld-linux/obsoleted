@@ -128,6 +128,18 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate kde4-kdemultimedia-mplayerthumbs-4.8.100-1 -> kde4-mplayerthumbs-4.9.0-1
 %migrate man-1.7-1 -> man-db-2.6.1-1
 
+%migrate kde4-kdegraphics-gwenview-4.6.99-1 -> kde4-gwenview-4.8.0-3
+%migrate kde4-kdegraphics-kamera-4.6.99-1 -> kde4-kamera-4.8.0-1
+%migrate kde4-kdesdk-kate-4.6.99-1 -> kde4-kate-4.8.0-1
+%migrate kde4-kdebase-kwrite-4.6.99-1 -> kde4-kate-4.8.0-1
+%migrate kde4-kdegraphics-kcolorchooser-4.6.99-1 -> kde4-kcolorchooser-4.8.0-1
+%migrate kde4-kdegraphics-kgamma-4.6.99-1 -> kde4-kgamma-4.8.0-1
+%migrate kde4-kdegraphics-kolourpaint-4.6.99-1 -> kde4-kolourpaint-4.8.0-1
+%migrate kde4-kdegraphics-kruler-4.6.99-1 -> kde4-svgpart-4.8.0-1
+%migrate kde4-kdegraphics-ksnapshot-4.6.99-1 -> kde4-ksnapshot-4.8.0-2
+%migrate kde4-kdegraphics-svgpart-4.6.99-1 -> kde4-kruler-4.8.0-1
+%migrate kde4-kdegraphics-kfile-4.6.100-1 -> kde4-konqueror-4.8.0-1
+
 %prep
 %setup -qcT
 
