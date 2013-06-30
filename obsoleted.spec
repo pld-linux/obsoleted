@@ -4,7 +4,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	24
+Release:	25
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
@@ -61,11 +61,9 @@ Automatyczna migracja %{PkgN -n %1} -> %{PkgN -n %3}.\
 %migrate ntp-client-4.2.4p8-6 => ntpdate-4.2.4p8-8
 
 %migrate util-linux-ng-2.20-1 => util-linux-2.19.1-2
-%migrate util-linux-ng-chkdupexe-2.20-1 => util-linux-chkdupexe-2.19.1-2
 %migrate util-linux-ng-libs-2.20-1 => libblkid-2.19.1-2
 %migrate util-linux-ng-devel-2.20-1 => libblkid-devel-2.19.1-2
 %migrate util-linux-ng-static-2.20-1 => libblkid-static-2.19.1-2
-%migrate util-linux-ng-initrd-2.20-1 => util-linux-initrd-2.19.1-2
 
 %migrate vixie-cron-4.4-1 => cronie-1.4.1-1
 
