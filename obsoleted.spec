@@ -3,7 +3,7 @@
 Summary:	Obsolete packages in PLD Linux distro
 Name:		obsoleted
 Version:	0
-Release:	26
+Release:	27
 License:	GPL
 Group:		Base
 BuildRequires:	rpm >= 4.4.9-56
